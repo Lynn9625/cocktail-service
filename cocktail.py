@@ -6,7 +6,6 @@ from PIL import Image
 from io import BytesIO
 
 
-
 load_dotenv()
 apikey = os.environ.get("API_KEY")
 
