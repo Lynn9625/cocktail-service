@@ -81,9 +81,9 @@ if __name__ == "__main__":
                 x += 1
             layout3 = [
                 [sg.Text(f"The following cocktails all contain '{values[0]}' in their names")],
-                [sg.Text("Interested in one of the following cocktails? Input its name to continue searching")],
+                [sg.Text("Interested in one of the following cocktails? Input its name to continue searching (case sensitive)")],
                 [sg.InputText()],
-                [sg.Text("\n".join(cocktails))],
+                [sg.Multiline("\n".join(cocktails), autoscroll=True)],
                 [sg.OK(),sg.Cancel()],
             ]
             window3 = sg.Window("Cocktail Search Service").Layout(layout3)
@@ -110,7 +110,7 @@ if __name__ == "__main__":
 ## SEARCH COCKTAIL BY INGREDIENT
     elif values == {0: ['search cocktail by ingredient']} and event == "OK":        
         layout4 = [
-        [sg.Text("The ingredient I choose is")],
+        [sg.Text("The ingredient I choose is (capitalize the first letter)")],
         [sg.Input()],
         [sg.OK(),sg.Cancel()],
         ]
@@ -134,9 +134,9 @@ if __name__ == "__main__":
                 x += 1
             layout5 = [
                 [sg.Text(f"The following cocktails all contain '{values[0]}' in their ingredients")],
-                [sg.Text("Interested in one of the following cocktails? Input its name to continue searching")],
+                [sg.Text("Interested in one of the following cocktails? Input its name to continue searching (case sensitive)")],
                 [sg.InputText()],
-                [sg.Text("\n".join(drinks))],
+                [sg.Multiline("\n".join(drinks),autoscroll=True)],
                 [sg.OK(),sg.Cancel()],
             ]
             window5 = sg.Window("Cocktail Search Service").Layout(layout5)

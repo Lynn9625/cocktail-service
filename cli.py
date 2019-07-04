@@ -118,7 +118,7 @@ if __name__ == "__main__":
         for x in cocktails:
             print(x)
         print("--------------------------------------------------------------")
-        cocktail_choice = input("Input the name of one listed cocktail to continue searching or 'DONE' to exit:")
+        cocktail_choice = input("Input the name of one listed cocktail to continue searching or 'DONE' to exit (case sensitive):")
         print("--------------------------------------------------------------") 
         if cocktail_choice in cocktails:
             name_url = f"https://www.thecocktaildb.com/api/json/v1/{apikey}/search.php?s={cocktail_choice}"
@@ -150,7 +150,7 @@ if __name__ == "__main__":
        for y in drinks:
         print(y)  
        print("--------------------------------------------------------------")
-       drink_choice = input("Input the name of one listed cocktail to continue searching or 'DONE' to exit:")
+       drink_choice = input("Input the name of one listed cocktail to continue searching or 'DONE' to exit (case sensitive):")
        print("--------------------------------------------------------------")
        if drink_choice in drinks:
             ingr_url = f"https://www.thecocktaildb.com/api/json/v1/{apikey}/search.php?s={drink_choice}"

@@ -2,14 +2,14 @@ import os
 import requests
 import json
 from dotenv import load_dotenv
-from cocktail import get_cocktail_ingredients
-from cocktail import get_cocktail_glass
-from cocktail import get_cocktail_instruction
+from cli import get_cocktail_ingredients
+from cli import get_cocktail_glass
+from cli import get_cocktail_instruction
 
 load_dotenv()
 apikey = os.environ.get("API_KEY")
 
-## In this test, I gather the informtaion of a specific cocktail "Margarita" (e.g. ingredients; type of glass; instruction) from the raw data in advance
+## In this test, I gather the infomation ahead of time about a specific cocktail "Margarita" (e.g. ingredients; type of glass; instruction) from the raw data in advance
 ## Then, my goal is to test whether functions in the "cocktail.py" file can return these desired information
 def test_get_cocktail_ingredients():
     cocktail_choice = 'Margarita'
