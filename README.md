@@ -1,4 +1,4 @@
-# cocktail-freestyle-project (using API TheCocktailDB to know more about cocktails)
+# cocktail service (using API TheCocktailDB to know more about cocktails)
 1) Fork the repo, then clone it to download it onto your own local computer and navigate there from the command-line:
 Address: https://github.com/Lynn9625/Cocktail-Freestyle-Project
 cd ~/Desktop/Cocktail-Freestyle-Project
